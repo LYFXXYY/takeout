@@ -1,6 +1,37 @@
+### Maven ###
 **/target/
-.idea
+*.jar
+*.war
+
+### IDE ###
+.idea/
 *.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+
+### OS ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Nginx ###
+front/nginx-1.20.2/logs/*.log
+front/nginx-1.20.2/logs/*.pid
+
+### 本地配置 ###
+application-local.yml
+application-local.properties
+
+### 编译产物 ###
 *.class
-*Test.java
-**/test/
+
+### 环境与密钥 ###
+.env
+*.pem
+*.key
+
+### QoderWork ###
+.qoder/
