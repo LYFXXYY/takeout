@@ -25,14 +25,17 @@ public interface DishMapper {
     //插入菜品数据
     @Autofill(value = OperationType.INSERT)
     void insert(Dish dish);
-//菜品查询
+    //菜品查询
     Page<DishVO> pageQuery(DishPageQueryDTO dishPageQueryDTO);
     //根据主键查询菜品
-@Select("select * from dish where id =#{id}")
+    @Select("select * from dish where id =#{id}")
     Dish getById(Long id);
-//删除菜品数据
-@Delete("delete from dish where id =#{id}")
+    //删除菜品数据
+    @Delete("delete from dish where id =#{id}")
     void deleteById(Long id);
-//批量删除
+    //批量删除
     void deleteByIds(List<Long> ids);
+
+    @Autofill(value = OperationType.UPDATE)
+    void update(Dish dish);
 }
