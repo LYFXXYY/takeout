@@ -67,7 +67,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void save(Employee employeeDTO) {
+    public void save(EmployeeDTO employeeDTO) {
         Employee employee = new Employee();
 //        属性拷贝
         BeanUtils.copyProperties(employeeDTO, employee);

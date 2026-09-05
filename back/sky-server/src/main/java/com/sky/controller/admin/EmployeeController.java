@@ -59,7 +59,7 @@ public class EmployeeController {
 
         EmployeeLoginVO employeeLoginVO = EmployeeLoginVO.builder()
                 .id(employee.getId())
-                .userName(employee.getUsername())
+                .username(employee.getUsername())
                 .name(employee.getName())
                 .token(token)
                 .build();
@@ -81,7 +81,7 @@ public class EmployeeController {
 //    新增员工
     @PostMapping
     @ApiOperation("新增员工")
-    public Result save(@RequestBody Employee employeeDTO) {
+    public Result save(@RequestBody EmployeeDTO employeeDTO) {
         log.info("新增员工{}", employeeDTO);
         employeeService.save(employeeDTO);
         return Result.success();
@@ -96,7 +96,7 @@ public class EmployeeController {
     }
     @ApiOperation("启用禁用员工")
     @PostMapping("/status/{status}")
-    public Result startOrStop(@PathVariable Integer status,Long id ){
+    public Result startOrStop(@PathVariable Integer status, @RequestParam Long id ){
         employeeService.startOrStop(status,id);
         return Result.success();
     }

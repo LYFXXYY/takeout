@@ -38,4 +38,9 @@ public interface DishMapper {
 
     @Autofill(value = OperationType.UPDATE)
     void update(Dish dish);
+
+    List<Dish> list(Dish dish);
+
+    @Select("select a.* from dish a left join setmeal_dish b on a.id = b.dish_id where b.setmeal_id = #{setmealId}")
+    List<Dish> getBySetmealId(Long id);
 }
