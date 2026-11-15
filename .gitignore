@@ -1,0 +1,14 @@
+# IDE
+.idea/
+*.iml
+**/target/
+*.class
+*.jar
+*.war
+*.pem
+*.key
+**/application-dev.yml
+.env
+.qoder/
+.DS_Store
+Thumbs.db
