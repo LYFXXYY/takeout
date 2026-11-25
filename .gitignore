@@ -20,6 +20,9 @@ desktop.ini
 ### Nginx ###
 front/nginx-1.20.2/logs/*.log
 front/nginx-1.20.2/logs/*.pid
+front/nginx-1.20.2/docs/
+front/nginx-1.20.2/contrib/
+front/nginx-1.20.2/html/index.html
 
 ### 本地配置 ###
 application-local.yml
@@ -36,3 +39,7 @@ application-local.properties
 
 ### QoderWork ###
 .qoder/
+
+### 本地文档与学习资产（不随仓库公开） ###
+agent.md
+skill-lab/
