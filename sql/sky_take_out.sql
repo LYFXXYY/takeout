@@ -1,4 +1,4 @@
--- Sky Takeout 数据库脚本
+-- Takeout 数据库脚本
 -- 导出时间: 2026-11-25  MySQL 8.0 / utf8mb4
 -- 导入: mysql -u root -p < sql/sky_take_out.sql
 

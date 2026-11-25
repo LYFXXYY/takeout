@@ -1,4 +1,4 @@
-# Sky Takeout · 苍穹外卖
+# Takeout · 外卖
 
 餐饮外卖管理系统，覆盖 **B 端管理后台**（运营侧 Web）与 **C 端小程序点餐**（接口侧）两个入口。后端采用 Spring Boot 多模块分层架构，配套 Redis 缓存、WebSocket 实时推送与定时任务，前端由 nginx 托管并通过反向代理对接后端 API。
 
@@ -38,7 +38,7 @@
 ## 项目结构
 
 ```
-sky-takeout/
+takeout/
 ├── back/
 │   ├── sky-common/          # 公共层：统一响应 Result、业务异常体系、常量、
 │   │                        #   JWT 工具、配置属性类、BaseContext 线程上下文
