@@ -1,0 +1,22 @@
+# 本文件是 application-dev.yml 的模板（真实配置不入库）。
+# 使用方式：复制为 application-dev.yml，填入你自己的值。
+sky:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: sky_take_out
+    username: your_mysql_username
+    password: your_mysql_password
+  redis:
+    host: localhost
+    port: 6379
+    # 无密码则留空字符串
+    password: your_redis_password
+    database: 1
+  alioss:
+    # 阿里云 OSS（用于菜品/套餐图片上传），未配置 OSS 时图片上传接口不可用
+    endpoint: oss-cn-xxx.aliyuncs.com
+    access-key-id: your_access_key_id
+    access-key-secret: your_access_key_secret
+    bucket-name: your_bucket_name
